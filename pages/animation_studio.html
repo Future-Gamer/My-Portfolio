@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Studio - FutureGamer Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgamecraft7778back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+</head>
+
+<body class="bg-background text-text-primary font-inter overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-primary/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <span class="font-orbitron font-bold text-xl text-primary">FutureGamer</span>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about_arpan_parekh.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">About</a>
+                    <a href="portfolio_showcase.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">Portfolio</a>
+                    <a href="3d_character_gallery.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">Characters</a>
+                    <a href="animation_studio.html"
+                        class="text-primary font-medium border-b-2 border-primary pb-1">Animations</a>
+                    <!-- <a href="skills_laboratory.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">Skills</a> -->
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-background via-surface to-background relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-1 h-1 bg-secondary rounded-full animate-bounce-slow"></div>
+            <div class="absolute bottom-20 left-1/4 w-3 h-3 bg-primary rounded-full animate-pulse-slow"></div>
+            <div class="absolute top-60 right-1/3 w-1 h-1 bg-accent rounded-full animate-bounce"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h1
+                class="font-orbitron font-black text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                Animation Studio
+            </h1>
+            <p class="text-xl md:text-2xl text-text-secondary max-w-4xl mx-auto mb-8 leading-relaxed">
+                Immersive 3D animations with technical breakdowns, frame-by-frame analysis, and behind-the-scenes
+                development insights
+            </p>
+
+            <!-- Animation Stats -->
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-accent">120+</div>
+                    <div class="text-text-muted">Animations Created</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-secondary">45+</div>
+                    <div class="text-text-muted">Character Rigs</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-primary">30+</div>
+                    <div class="text-text-muted">VFX Sequences</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Animation Player -->
+    <section class="py-16 bg-surface/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-text-primary mb-4">Featured Animation
+                    Showcase</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Experience our latest 3D animation with interactive
+                    controls and technical breakdowns</p>
+            </div>
+
+            <!-- Main Video Player -->
+            <div class="bg-surface rounded-xl overflow-hidden shadow-cyber mb-8">
+                <div class="relative">
+                    <!-- Video Container -->
+                    <div class="aspect-video bg-background relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3"
+                            alt="Cyberpunk Character Animation" class="w-full h-full object-cover" loading="lazy"
+                            onerror="this.src='https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+
+                        <!-- Play Button Overlay -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-background/50">
+                            <button
+                                class="bg-primary/90 rounded-full p-6 glow-primary hover:scale-110 transition-complex"
+                                onclick="playFeaturedAnimation()">
+                                <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Animation Info Overlay -->
+                        <div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm rounded-lg p-3">
+                            <h3 class="font-orbitron font-bold text-lg text-text-primary">Cyberpunk Warrior Combat</h3>
+                            <p class="text-text-muted text-sm">Duration: 2:45 | 60 FPS | Maya 2024</p>
+                        </div>
+
+                        <!-- Quality Badge -->
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-success/20 text-success px-3 py-1 rounded-full text-sm font-medium">4K
+                                Quality</span>
+                        </div>
+                    </div>
+
+                    <!-- Custom Video Controls -->
+                    <div class="bg-surface-light p-4">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-4">
+                                <button class="text-text-secondary hover:text-primary transition-smooth">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
+                                </button>
+                                <button class="text-text-secondary hover:text-primary transition-smooth">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 4h4v16H6zM14 4h4v16h-4z" />
+                                    </svg>
+                                </button>
+                                <span class="text-text-muted text-sm">00:00 / 02:45</span>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <button class="text-text-secondary hover:text-accent transition-smooth"
+                                    title="Frame by Frame">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <button class="text-text-secondary hover:text-accent transition-smooth"
+                                    title="Show Keyframes">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </button>
+                                <button class="text-text-secondary hover:text-accent transition-smooth"
+                                    title="Fullscreen">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Scrubber -->
+                        <div class="relative">
+                            <div class="w-full h-2 bg-surface rounded-full">
+                                <div class="h-full bg-gradient-to-r from-primary to-accent rounded-full"
+                                    style="width: 25%"></div>
+                            </div>
+                            <!-- Keyframe Markers -->
+                            <div class="absolute top-0 left-1/4 w-1 h-2 bg-warning rounded-full"></div>
+                            <div class="absolute top-0 left-1/2 w-1 h-2 bg-warning rounded-full"></div>
+                            <div class="absolute top-0 left-3/4 w-1 h-2 bg-warning rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Specifications Panel -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-2 bg-surface rounded-xl p-6 shadow-cyber">
+                    <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Animation Breakdown</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-surface-light rounded-lg">
+                            <span class="text-text-secondary">Total Frames</span>
+                            <span class="text-text-primary font-medium">9,900</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-surface-light rounded-lg">
+                            <span class="text-text-secondary">Keyframes</span>
+                            <span class="text-text-primary font-medium">247</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-surface-light rounded-lg">
+                            <span class="text-text-secondary">Bone Count</span>
+                            <span class="text-text-primary font-medium">156</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-surface-light rounded-lg">
+                            <span class="text-text-secondary">Render Time</span>
+                            <span class="text-text-primary font-medium">48 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-surface rounded-xl p-6 shadow-cyber">
+                    <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Tools Used</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">Maya 2024</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">Unity 2023</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            </div>
+                            <span class="text-text-primary">Blender 4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Categories -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron font-bold text-3xl md:text-4xl text-text-primary mb-4">Animation Categories
+                </h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Explore different types of animations with technical
+                    specifications and creative insights</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="px-6 py-3 bg-primary text-white rounded-lg font-medium transition-smooth glow-primary"
+                    data-category="all">
+                    All Animations
+                </button>
+                <button
+                    class="px-6 py-3 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                    data-category="character">
+                    Character Animation
+                </button>
+                <button
+                    class="px-6 py-3 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                    data-category="vfx">
+                    VFX & Particles
+                </button>
+                <button
+                    class="px-6 py-3 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                    data-category="cinematic">
+                    Cinematic Sequences
+                </button>
+                <button
+                    class="px-6 py-3 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                    data-category="ui">
+                    UI Animations
+                </button>
+            </div>
+
+            <!-- Animation Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="animation-grid">
+
+                <!-- Animation Card 1 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="character">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Warrior Combat Sequence"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-complex" loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2925&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+
+                        <!-- Play Button Overlay -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                            <button class="bg-primary/90 rounded-full p-4 glow-primary">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Duration Badge -->
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-surface/90 text-text-primary px-2 py-1 rounded text-xs font-medium">3:24</span>
+                        </div>
+
+                        <!-- Quality Badge -->
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">60 FPS</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Warrior Combat Sequence</h3>
+                        <p class="text-text-secondary mb-4 line-clamp-2">
+                            Dynamic melee combat animation featuring advanced inverse kinematics and procedural hit
+                            reactions.
+                        </p>
+
+                        <!-- Technical Tags -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs font-medium">Maya</span>
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">Motion
+                                Capture</span>
+                            <span class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium">IK
+                                Chains</span>
+                        </div>
+
+                        <!-- Animation Stats -->
+                        <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                            <div>
+                                <div class="text-text-primary font-medium">204</div>
+                                <div class="text-text-muted">Frames</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">156</div>
+                                <div class="text-text-muted">Bones</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">24</div>
+                                <div class="text-text-muted">Keyframes</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth glow-primary"
+                                onclick="openAnimationModal('warrior-combat')">
+                                View Details
+                            </button>
+                            <button
+                                class="bg-surface-light hover:bg-accent hover:text-background text-text-secondary py-2 px-4 rounded-lg transition-smooth">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Card 2 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="vfx">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pixabay.com/photos/2016/11/19/15/32/laptop-1839876_1280.jpg"
+                            alt="Particle Magic System"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-complex" loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                            <button class="bg-primary/90 rounded-full p-4 glow-primary">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-surface/90 text-text-primary px-2 py-1 rounded text-xs font-medium">1:45</span>
+                        </div>
+
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning/20 text-warning px-2 py-1 rounded text-xs font-medium">4K</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Particle Magic System</h3>
+                        <p class="text-text-secondary mb-4 line-clamp-2">
+                            Advanced particle effects for magical spells with dynamic lighting and physics-based
+                            interactions.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs font-medium">Unity
+                                VFX</span>
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">Shader
+                                Graph</span>
+                            <span
+                                class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">Physics</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                            <div>
+                                <div class="text-text-primary font-medium">2.5K</div>
+                                <div class="text-text-muted">Particles</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">12</div>
+                                <div class="text-text-muted">Emitters</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">8</div>
+                                <div class="text-text-muted">Shaders</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth glow-primary"
+                                onclick="openAnimationModal('particle-magic')">
+                                View Details
+                            </button>
+                            <button
+                                class="bg-surface-light hover:bg-accent hover:text-background text-text-secondary py-2 px-4 rounded-lg transition-smooth">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Card 3 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="cinematic">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                            alt="Cinematic Camera Sequence"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-complex" loading="lazy"
+                            onerror="this.src='https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                            <button class="bg-primary/90 rounded-full p-4 glow-primary">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-surface/90 text-text-primary px-2 py-1 rounded text-xs font-medium">5:12</span>
+                        </div>
+
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-error/20 text-error px-2 py-1 rounded text-xs font-medium">8K</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Cinematic Camera Sequence
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-2">
+                            Epic cinematic sequence with dynamic camera movements, depth of field, and atmospheric
+                            lighting.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary/20 text-primary px-2 py-1 rounded text-xs font-medium">Cinemachine</span>
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">Timeline</span>
+                            <span
+                                class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium">Post-Process</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                            <div>
+                                <div class="text-text-primary font-medium">18</div>
+                                <div class="text-text-muted">Cameras</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">45</div>
+                                <div class="text-text-muted">Cuts</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">312</div>
+                                <div class="text-text-muted">Seconds</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth glow-primary"
+                                onclick="openAnimationModal('cinematic-sequence')">
+                                View Details
+                            </button>
+                            <button
+                                class="bg-surface-light hover:bg-accent hover:text-background text-text-secondary py-2 px-4 rounded-lg transition-smooth">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Card 4 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="character">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Facial Animation System"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-complex" loading="lazy"
+                            onerror="this.src='https://images.pixabay.com/photos/2016/11/19/15/32/laptop-1839876_1280.jpg'; this.onerror=null;" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                            <button class="bg-primary/90 rounded-full p-4 glow-primary">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-surface/90 text-text-primary px-2 py-1 rounded text-xs font-medium">2:18</span>
+                        </div>
+
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">60 FPS</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Facial Animation System</h3>
+                        <p class="text-text-secondary mb-4 line-clamp-2">
+                            Advanced facial rigging with blend shapes, emotion mapping, and lip-sync automation for
+                            realistic expressions.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs font-medium">Blend
+                                Shapes</span>
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">FACS</span>
+                            <span class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium">Lip
+                                Sync</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                            <div>
+                                <div class="text-text-primary font-medium">84</div>
+                                <div class="text-text-muted">Blend Shapes</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">32</div>
+                                <div class="text-text-muted">Bones</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">15</div>
+                                <div class="text-text-muted">Emotions</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth glow-primary"
+                                onclick="openAnimationModal('facial-animation')">
+                                View Details
+                            </button>
+                            <button
+                                class="bg-surface-light hover:bg-accent hover:text-background text-text-secondary py-2 px-4 rounded-lg transition-smooth">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Card 5 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="ui">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                            alt="UI Animation System"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-complex" loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                            <button class="bg-primary/90 rounded-full p-4 glow-primary">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-surface/90 text-text-primary px-2 py-1 rounded text-xs font-medium">0:45</span>
+                        </div>
+
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">Interactive</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">UI Animation System</h3>
+                        <p class="text-text-secondary mb-4 line-clamp-2">
+                            Smooth UI transitions and micro-interactions for enhanced user experience with easing curves
+                            and timing.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-primary/20 text-primary px-2 py-1 rounded text-xs font-medium">DOTween</span>
+                            <span class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">UI
+                                Toolkit</span>
+                            <span
+                                class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">Responsive</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                            <div>
+                                <div class="text-text-primary font-medium">28</div>
+                                <div class="text-text-muted">Transitions</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">12</div>
+                                <div class="text-text-muted">Easing Types</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">6</div>
+                                <div class="text-text-muted">UI States</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth glow-primary"
+                                onclick="openAnimationModal('ui-animation')">
+                                View Details
+                            </button>
+                            <button
+                                class="bg-surface-light hover:bg-accent hover:text-background text-text-secondary py-2 px-4 rounded-lg transition-smooth">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Card 6 -->
+                <div class="bg-surface rounded-xl overflow-hidden shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="vfx">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                            alt="Environmental Effects"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-complex" loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                            <button class="bg-primary/90 rounded-full p-4 glow-primary">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="absolute top-4 right-4">
+                            <span
+                                class="bg-surface/90 text-text-primary px-2 py-1 rounded text-xs font-medium">4:33</span>
+                        </div>
+
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning/20 text-warning px-2 py-1 rounded text-xs font-medium">4K</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Environmental Effects</h3>
+                        <p class="text-text-secondary mb-4 line-clamp-2">
+                            Dynamic weather systems, atmospheric effects, and environmental storytelling through
+                            particle systems.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/20 text-primary px-2 py-1 rounded text-xs font-medium">Weather
+                                System</span>
+                            <span
+                                class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">Volumetrics</span>
+                            <span
+                                class="bg-secondary/20 text-secondary px-2 py-1 rounded text-xs font-medium">Lighting</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                            <div>
+                                <div class="text-text-primary font-medium">5.2K</div>
+                                <div class="text-text-muted">Particles</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">24</div>
+                                <div class="text-text-muted">Effects</div>
+                            </div>
+                            <div>
+                                <div class="text-text-primary font-medium">16</div>
+                                <div class="text-text-muted">Shaders</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <button
+                                class="flex-1 bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth glow-primary"
+                                onclick="openAnimationModal('environmental-effects')">
+                                View Details
+                            </button>
+                            <button
+                                class="bg-surface-light hover:bg-accent hover:text-background text-text-secondary py-2 px-4 rounded-lg transition-smooth">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button
+                    class="bg-surface-light hover:bg-primary hover:text-white text-text-secondary px-8 py-3 rounded-lg font-medium transition-smooth border border-primary/20 hover:border-primary">
+                    Load More Animations
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation Modal -->
+    <div id="animation-modal"
+        class="fixed inset-0 bg-background/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+        <div class="bg-surface rounded-xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-cyber">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-6 border-b border-primary/20">
+                <h2 id="modal-title" class="font-orbitron font-bold text-2xl text-text-primary">Animation Details</h2>
+                <button onclick="closeAnimationModal()"
+                    class="text-text-muted hover:text-text-primary transition-smooth">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6">
+                <!-- Animation Player -->
+                <div class="bg-background rounded-lg mb-6 overflow-hidden">
+                    <div class="aspect-video bg-surface-light flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Interactive Animation
+                                Player</h3>
+                            <p class="text-text-secondary mb-4">Experience the animation with frame-by-frame controls
+                            </p>
+                            <button
+                                class="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-lg font-medium transition-smooth glow-primary">
+                                Play Animation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Details Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Technical Breakdown -->
+                    <div class="bg-surface-light rounded-lg p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Technical Breakdown</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                                <span class="text-text-secondary">Animation Type</span>
+                                <span class="text-text-primary font-medium">Character Combat</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                                <span class="text-text-secondary">Frame Rate</span>
+                                <span class="text-text-primary font-medium">60 FPS</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                                <span class="text-text-secondary">Total Duration</span>
+                                <span class="text-text-primary font-medium">3:24</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-surface rounded-lg">
+                                <span class="text-text-secondary">Bone Count</span>
+                                <span class="text-text-primary font-medium">156</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Development Process -->
+                    <div class="bg-surface-light rounded-lg p-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Development Process</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div>
+                                    <div class="font-medium text-text-primary">Concept & Reference</div>
+                                    <div class="text-sm text-text-muted">Week 1</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div>
+                                    <div class="font-medium text-text-primary">Blocking & Timing</div>
+                                    <div class="text-sm text-text-muted">Week 2-3</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div>
+                                    <div class="font-medium text-text-primary">Polish & Refinement</div>
+                                    <div class="text-sm text-text-muted">Week 4-5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Downloadable Resources -->
+                <div class="mt-8 bg-surface-light rounded-lg p-6">
+                    <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Downloadable Resources</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <a href="javascript:void(0)"
+                            class="flex items-center space-x-3 p-3 bg-surface rounded-lg hover:bg-primary/10 transition-smooth">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2" />
+                            </svg>
+                            <div>
+                                <div class="font-medium text-text-primary">Animation Files</div>
+                                <div class="text-sm text-text-muted">Maya & FBX</div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="flex items-center space-x-3 p-3 bg-surface rounded-lg hover:bg-primary/10 transition-smooth">
+                            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                            <div>
+                                <div class="font-medium text-text-primary">Video Reference</div>
+                                <div class="text-sm text-text-muted">MP4 High Quality</div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="flex items-center space-x-3 p-3 bg-surface rounded-lg hover:bg-primary/10 transition-smooth">
+                            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            <div>
+                                <div class="font-medium text-text-primary">Documentation</div>
+                                <div class="text-sm text-text-muted">Process Breakdown</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-primary/20 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <span class="font-orbitron font-bold text-xl text-primary">FutureGamer Portfolio</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Crafting meaningful digital experiences through innovative game development, 3D
+                        artistry, and
+                        immersive storytelling.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/arpan-parekh"
+                            class="text-text-muted hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/Future-Gamer"
+                            class="text-text-muted hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.089 2.91.833.092-.647.35-1.089.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.579.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portfolio_showcase.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">Portfolio</a>
+                        </li>
+                        <li><a href="3d_character_gallery.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">3D
+                                Characters</a></li>
+                        <li><a href="animation_studio.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">Animations</a>
+                        </li>
+                        <li><a href="skills_laboratory.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">Skills</a></li>
+                        <li><a href="about_arpan_parekh.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">arpanparekh06@gmail.com</li>
+                        <li class="text-text-secondary">+91 6352 307 232</li>
+                        <li class="text-text-secondary">Gujarat, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary/20 mt-8 pt-8 text-center">
+                <p class="text-text-muted">© 2025 FutureGamer Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('[data-category]');
+            const animationCards = document.querySelectorAll('#animation-grid [data-category]');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filter = this.getAttribute('data-category');
+
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white', 'glow-primary');
+                        btn.classList.add('bg-surface-light', 'text-text-secondary');
+                    });
+
+                    this.classList.remove('bg-surface-light', 'text-text-secondary');
+                    this.classList.add('bg-primary', 'text-white', 'glow-primary');
+
+                    // Filter animations
+                    animationCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Featured animation player
+        function playFeaturedAnimation() {
+            // Simulate playing animation
+            console.log('Playing featured animation...');
+            // In a real implementation, this would control video playback
+        }
+
+        // Modal functionality
+        function openAnimationModal(animationId) {
+            const modal = document.getElementById('animation-modal');
+            const title = document.getElementById('modal-title');
+
+            // Set modal content based on animation
+            const animationTitles = {
+                'warrior-combat': 'Warrior Combat Sequence',
+                'particle-magic': 'Particle Magic System',
+                'cinematic-sequence': 'Cinematic Camera Sequence',
+                'facial-animation': 'Facial Animation System',
+                'ui-animation': 'UI Animation System',
+                'environmental-effects': 'Environmental Effects'
+            };
+
+            title.textContent = animationTitles[animationId] || 'Animation Details';
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeAnimationModal() {
+            const modal = document.getElementById('animation-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('animation-modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeAnimationModal();
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>

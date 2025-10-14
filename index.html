@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureGamer Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .redirect-container {
+            text-align: center;
+            color: white;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .loading-text {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .loading-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+            animation: loadProgress 3s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes loadProgress {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgamecraft7778back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+</head>
+
+<body>
+    <div class="redirect-container">
+        <div class="logo">🎮 FutureGamer Portfolio</div>
+        <div class="loading-text">Loading your creative journey...</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to portfolio showcase after 3 seconds
+        setTimeout(function () {
+            window.location.href = 'pages/about_arpan_parekh.html';
+        }, 3000);
+
+        // Preload the target page for faster loading
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = 'pages/about_arpan_parekh.html';
+        document.head.appendChild(link);
+    </script>
+    <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+
+</html>

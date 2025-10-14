@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Laboratory - FutureGamer Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module"
+        src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgamecraft7778back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+    <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+</head>
+
+<body class="bg-background text-text-primary font-inter overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-primary/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <span class="font-orbitron font-bold text-xl text-primary">FutureGamer</span>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about_arpan_parekh.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">About</a>
+                    <a href="portfolio_showcase.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">Portfolio</a>
+                    <a href="3d_character_gallery.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">Characters</a>
+                    <a href="animation_studio.html"
+                        class="text-text-secondary hover:text-primary transition-smooth">Animations</a>
+                    <a href="skills_laboratory.html"
+                        class="text-primary font-medium border-b-2 border-primary pb-1">Skills</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-background via-surface to-background relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-1 h-1 bg-secondary rounded-full animate-bounce-slow"></div>
+            <div class="absolute bottom-20 left-1/4 w-3 h-3 bg-primary rounded-full animate-pulse-slow"></div>
+            <div class="absolute top-60 right-1/3 w-1 h-1 bg-accent rounded-full animate-bounce"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h1
+                class="font-orbitron font-black text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+                Skills Laboratory
+            </h1>
+            <p class="text-xl md:text-2xl text-text-secondary max-w-4xl mx-auto mb-8 leading-relaxed">
+                Interactive demonstrations of technical expertise and creative capabilities through hands-on skill
+                assessments and live coding examples
+            </p>
+
+            <!-- Skill Overview Stats -->
+            <div class="flex flex-wrap justify-center gap-8 mb-12">
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-accent">15+</div>
+                    <div class="text-text-muted">Core Skills</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-secondary">8+</div>
+                    <div class="text-text-muted">Certifications</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-orbitron font-bold text-primary">5</div>
+                    <div class="text-text-muted">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Categories Filter -->
+    <section class="py-8 bg-surface/50 border-y border-primary/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-3">
+                    <button
+                        class="px-4 py-2 bg-primary text-white rounded-lg font-medium transition-smooth hover:bg-primary-600 glow-primary"
+                        data-category="all">
+                        All Skills
+                    </button>
+                    <button
+                        class="px-4 py-2 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                        data-category="technical">
+                        Technical
+                    </button>
+                    <button
+                        class="px-4 py-2 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                        data-category="creative">
+                        Creative
+                    </button>
+                    <button
+                        class="px-4 py-2 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                        data-category="tools">
+                        Tools & Software
+                    </button>
+                    <button
+                        class="px-4 py-2 bg-surface-light text-text-secondary rounded-lg font-medium transition-smooth hover:bg-primary hover:text-white"
+                        data-category="soft">
+                        Soft Skills
+                    </button>
+                </div>
+
+                <!-- Skill Level Legend -->
+                <div class="flex items-center gap-4 text-sm">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-success rounded-full"></div>
+                        <span class="text-text-muted">Expert (90%+)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-warning rounded-full"></div>
+                        <span class="text-text-muted">Advanced (70%+)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 bg-accent rounded-full"></div>
+                        <span class="text-text-muted">Intermediate (50%+)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Grid -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="skills-grid">
+
+                <!-- Unity Development Skill -->
+                <div class="bg-surface rounded-xl p-6 shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="technical">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron font-bold text-lg text-text-primary">Unity Development</h3>
+                                <p class="text-text-muted text-sm">Game Engine Mastery</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-orbitron font-bold text-success">95%</div>
+                            <div class="text-xs text-text-muted">Expert Level</div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Progress Bar -->
+                    <div class="mb-4">
+                        <div class="w-full bg-surface-light rounded-full h-2">
+                            <div class="bg-gradient-to-r from-success to-accent h-2 rounded-full transition-complex"
+                                style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">C# Scripting</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Physics Systems</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Performance Optimization</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo Button -->
+                    <button
+                        class="w-full bg-primary/20 hover:bg-primary hover:text-white text-primary py-2 px-4 rounded-lg font-medium transition-smooth border border-primary/30"
+                        onclick="openSkillDemo('unity')">
+                        View Interactive Demo
+                    </button>
+
+                    <!-- Experience Badge -->
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span class="text-text-muted text-sm">5 Years Experience</span>
+                        </div>
+                        <span class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">Certified</span>
+                    </div>
+                </div>
+
+                <!-- C# Programming Skill -->
+                <div class="bg-surface rounded-xl p-6 shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="technical">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron font-bold text-lg text-text-primary">C# Programming</h3>
+                                <p class="text-text-muted text-sm">Backend & Game Logic</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-orbitron font-bold text-success">92%</div>
+                            <div class="text-xs text-text-muted">Expert Level</div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Progress Bar -->
+                    <div class="mb-4">
+                        <div class="w-full bg-surface-light rounded-full h-2">
+                            <div class="bg-gradient-to-r from-success to-accent h-2 rounded-full transition-complex"
+                                style="width: 92%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">OOP Principles</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Design Patterns</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Async Programming</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo Button -->
+                    <button
+                        class="w-full bg-accent/20 hover:bg-accent hover:text-background text-accent py-2 px-4 rounded-lg font-medium transition-smooth border border-accent/30"
+                        onclick="openSkillDemo('csharp')">
+                        View Code Examples
+                    </button>
+
+                    <!-- Experience Badge -->
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span class="text-text-muted text-sm">6 Years Experience</span>
+                        </div>
+                        <span class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">Certified</span>
+                    </div>
+                </div>
+
+                <!-- 3D Modeling Skill -->
+                <div class="bg-surface rounded-xl p-6 shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="creative">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron font-bold text-lg text-text-primary">3D Modeling</h3>
+                                <p class="text-text-muted text-sm">Character & Environment Art</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-orbitron font-bold text-warning">88%</div>
+                            <div class="text-xs text-text-muted">Advanced Level</div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Progress Bar -->
+                    <div class="mb-4">
+                        <div class="w-full bg-surface-light rounded-full h-2">
+                            <div class="bg-gradient-to-r from-warning to-secondary h-2 rounded-full transition-complex"
+                                style="width: 88%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Character Modeling</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">UV Mapping</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Texturing</span>
+                            <span class="text-accent">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo Button -->
+                    <button
+                        class="w-full bg-secondary/20 hover:bg-secondary hover:text-white text-secondary py-2 px-4 rounded-lg font-medium transition-smooth border border-secondary/30"
+                        onclick="openSkillDemo('3dmodeling')">
+                        View 3D Gallery
+                    </button>
+
+                    <!-- Experience Badge -->
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span class="text-text-muted text-sm">4 Years Experience</span>
+                        </div>
+                        <span class="bg-warning/20 text-warning px-2 py-1 rounded text-xs font-medium">Portfolio</span>
+                    </div>
+                </div>
+
+                <!-- Animation Skill -->
+                <div class="bg-surface rounded-xl p-6 shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="creative">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-success/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron font-bold text-lg text-text-primary">3D Animation</h3>
+                                <p class="text-text-muted text-sm">Character & Cinematic</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-orbitron font-bold text-warning">85%</div>
+                            <div class="text-xs text-text-muted">Advanced Level</div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Progress Bar -->
+                    <div class="mb-4">
+                        <div class="w-full bg-surface-light rounded-full h-2">
+                            <div class="bg-gradient-to-r from-warning to-success h-2 rounded-full transition-complex"
+                                style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Keyframe Animation</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Rigging</span>
+                            <span class="text-accent">Intermediate</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Motion Capture</span>
+                            <span class="text-accent">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo Button -->
+                    <button
+                        class="w-full bg-success/20 hover:bg-success hover:text-background text-success py-2 px-4 rounded-lg font-medium transition-smooth border border-success/30"
+                        onclick="openSkillDemo('animation')">
+                        View Animation Reel
+                    </button>
+
+                    <!-- Experience Badge -->
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span class="text-text-muted text-sm">3 Years Experience</span>
+                        </div>
+                        <span class="bg-warning/20 text-warning px-2 py-1 rounded text-xs font-medium">Portfolio</span>
+                    </div>
+                </div>
+
+                <!-- Blender Skill -->
+                <div class="bg-surface rounded-xl p-6 shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="tools">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                    alt="Blender" class="w-6 h-6 rounded object-cover" loading="lazy"
+                                    onerror="this.src='https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron font-bold text-lg text-text-primary">Blender</h3>
+                                <p class="text-text-muted text-sm">3D Creation Suite</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-orbitron font-bold text-success">90%</div>
+                            <div class="text-xs text-text-muted">Expert Level</div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Progress Bar -->
+                    <div class="mb-4">
+                        <div class="w-full bg-surface-light rounded-full h-2">
+                            <div class="bg-gradient-to-r from-success to-primary h-2 rounded-full transition-complex"
+                                style="width: 90%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Modeling</span>
+                            <span class="text-success">Expert</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Sculpting</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Rendering</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo Button -->
+                    <button
+                        class="w-full bg-primary/20 hover:bg-primary hover:text-white text-primary py-2 px-4 rounded-lg font-medium transition-smooth border border-primary/30"
+                        onclick="openSkillDemo('blender')">
+                        View Workflow Demo
+                    </button>
+
+                    <!-- Experience Badge -->
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span class="text-text-muted text-sm">4 Years Experience</span>
+                        </div>
+                        <span class="bg-success/20 text-success px-2 py-1 rounded text-xs font-medium">Certified</span>
+                    </div>
+                </div>
+
+                <!-- Project Management Skill -->
+                <div class="bg-surface rounded-xl p-6 shadow-cyber hover:shadow-glow-primary transition-complex group"
+                    data-category="soft">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-orbitron font-bold text-lg text-text-primary">Project Management</h3>
+                                <p class="text-text-muted text-sm">Agile & Scrum</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-orbitron font-bold text-warning">82%</div>
+                            <div class="text-xs text-text-muted">Advanced Level</div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Progress Bar -->
+                    <div class="mb-4">
+                        <div class="w-full bg-surface-light rounded-full h-2">
+                            <div class="bg-gradient-to-r from-warning to-accent h-2 rounded-full transition-complex"
+                                style="width: 82%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Details -->
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Team Leadership</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Sprint Planning</span>
+                            <span class="text-warning">Advanced</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Risk Management</span>
+                            <span class="text-accent">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Demo Button -->
+                    <button
+                        class="w-full bg-accent/20 hover:bg-accent hover:text-background text-accent py-2 px-4 rounded-lg font-medium transition-smooth border border-accent/30"
+                        onclick="openSkillDemo('management')">
+                        View Case Studies
+                    </button>
+
+                    <!-- Experience Badge -->
+                    <div class="mt-4 flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                            <span class="text-text-muted text-sm">3 Years Experience</span>
+                        </div>
+                        <span class="bg-accent/20 text-accent px-2 py-1 rounded text-xs font-medium">Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements -->
+    <section class="py-16 bg-surface/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-orbitron font-bold text-4xl text-text-primary mb-4">Certifications & Achievements</h2>
+                <p class="text-text-secondary text-lg max-w-3xl mx-auto">
+                    Professional certifications and industry recognition that validate technical expertise and
+                    commitment to continuous learning
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Unity Certified Developer -->
+                <div
+                    class="bg-surface rounded-xl p-6 text-center shadow-cyber hover:shadow-glow-primary transition-complex">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-2">Unity Certified Developer</h3>
+                    <p class="text-text-muted text-sm mb-3">Professional Level</p>
+                    <div class="bg-success/20 text-success px-3 py-1 rounded-full text-xs font-medium inline-block">
+                        Verified 2024
+                    </div>
+                </div>
+
+                <!-- C# Programming Certificate -->
+                <div
+                    class="bg-surface rounded-xl p-6 text-center shadow-cyber hover:shadow-glow-primary transition-complex">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-2">Microsoft C# Certification</h3>
+                    <p class="text-text-muted text-sm mb-3">Advanced Programming</p>
+                    <div class="bg-success/20 text-success px-3 py-1 rounded-full text-xs font-medium inline-block">
+                        Verified 2023
+                    </div>
+                </div>
+
+                <!-- Agile Project Management -->
+                <div
+                    class="bg-surface rounded-xl p-6 text-center shadow-cyber hover:shadow-glow-primary transition-complex">
+                    <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-2">Scrum Master Certified</h3>
+                    <p class="text-text-muted text-sm mb-3">Agile Methodology</p>
+                    <div class="bg-success/20 text-success px-3 py-1 rounded-full text-xs font-medium inline-block">
+                        Verified 2024
+                    </div>
+                </div>
+
+                <!-- Industry Recognition -->
+                <div
+                    class="bg-surface rounded-xl p-6 text-center shadow-cyber hover:shadow-glow-primary transition-complex">
+                    <div class="w-16 h-16 bg-warning/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-2">Indie Game Award</h3>
+                    <p class="text-text-muted text-sm mb-3">Best Technical Innovation</p>
+                    <div class="bg-warning/20 text-warning px-3 py-1 rounded-full text-xs font-medium inline-block">
+                        Winner 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Assessment Tool -->
+    <section class="py-16 bg-background">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-surface rounded-xl p-8 shadow-cyber">
+                <div class="text-center mb-8">
+                    <h2 class="font-orbitron font-bold text-3xl text-text-primary mb-4">Interactive Skill Assessment
+                    </h2>
+                    <p class="text-text-secondary text-lg">
+                        Take a quick assessment to see how your skills compare with industry standards
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Assessment Categories -->
+                    <div class="space-y-4">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Assessment Categories</h3>
+
+                        <div class="flex items-center justify-between p-4 bg-surface-light rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <span class="text-text-primary font-medium">Unity Development</span>
+                            </div>
+                            <button
+                                class="bg-primary/20 hover:bg-primary hover:text-white text-primary px-3 py-1 rounded text-sm transition-smooth">
+                                Start Test
+                            </button>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-surface-light rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    </svg>
+                                </div>
+                                <span class="text-text-primary font-medium">C# Programming</span>
+                            </div>
+                            <button
+                                class="bg-accent/20 hover:bg-accent hover:text-background text-accent px-3 py-1 rounded text-sm transition-smooth">
+                                Start Test
+                            </button>
+                        </div>
+
+                        <div class="flex items-center justify-between p-4 bg-surface-light rounded-lg">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <span class="text-text-primary font-medium">3D Modeling</span>
+                            </div>
+                            <button
+                                class="bg-secondary/20 hover:bg-secondary hover:text-white text-secondary px-3 py-1 rounded text-sm transition-smooth">
+                                Start Test
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Assessment Results Preview -->
+                    <div class="space-y-4">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Sample Results</h3>
+
+                        <div class="bg-surface-light rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-text-primary font-medium">Overall Score</span>
+                                <span class="text-success font-bold">89%</span>
+                            </div>
+                            <div class="w-full bg-background rounded-full h-2 mb-3">
+                                <div class="bg-gradient-to-r from-success to-accent h-2 rounded-full"
+                                    style="width: 89%"></div>
+                            </div>
+                            <p class="text-text-muted text-sm">
+                                Your skills are above industry average. Consider focusing on advanced optimization
+                                techniques.
+                            </p>
+                        </div>
+
+                        <div class="bg-surface-light rounded-lg p-4">
+                            <h4 class="font-medium text-text-primary mb-3">Recommended Learning Path</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    <span class="text-text-secondary text-sm">Advanced Unity Performance</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    <span class="text-text-secondary text-sm">Shader Programming</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                    <span class="text-text-secondary text-sm">VR Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button
+                        class="bg-primary hover:bg-primary-600 text-white px-8 py-3 rounded-lg font-medium transition-smooth glow-primary">
+                        Download Assessment Template
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Demo Modal -->
+    <div id="skill-modal"
+        class="fixed inset-0 bg-background/90 backdrop-blur-md z-50 hidden items-center justify-center p-4">
+        <div class="bg-surface rounded-xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-cyber">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-6 border-b border-primary/20">
+                <h2 id="modal-title" class="font-orbitron font-bold text-2xl text-text-primary">Skill Demonstration</h2>
+                <button onclick="closeSkillModal()" class="text-text-muted hover:text-text-primary transition-smooth">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6" id="modal-content">
+                <!-- Content will be dynamically loaded based on skill -->
+                <div class="text-center py-12">
+                    <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-orbitron font-bold text-xl text-text-primary mb-2">Interactive Demo Loading...</h3>
+                    <p class="text-text-secondary">Preparing skill demonstration interface</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-primary/20 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <span class="font-orbitron font-bold text-xl text-primary">FutureGamer Portfolio</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">
+                        Crafting meaningful digital experiences through innovative game development, 3D
+                        artistry, and
+                        immersive storytelling.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/arpan-parekh"
+                            class="text-text-muted hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/Future-Gamer"
+                            class="text-text-muted hover:text-primary transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.089 2.91.833.092-.647.35-1.089.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.579.688.481C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="portfolio_showcase.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">Portfolio</a>
+                        </li>
+                        <li><a href="3d_character_gallery.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">3D
+                                Characters</a></li>
+                        <li><a href="animation_studio.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">Animations</a>
+                        </li>
+                        <li><a href="skills_laboratory.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">Skills</a></li>
+                        <li><a href="about_arpan_parekh.html"
+                                class="text-text-secondary hover:text-primary transition-smooth">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-orbitron font-bold text-lg text-text-primary mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-text-secondary">arpanparekh06@gmail.com</li>
+                        <li class="text-text-secondary">+91 6352 307 232</li>
+                        <li class="text-text-secondary">Gujarat, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary/20 mt-8 pt-8 text-center">
+                <p class="text-text-muted">© 2025 FutureGamer Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('[data-category]');
+            const skillCards = document.querySelectorAll('#skills-grid > div');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white', 'glow-primary');
+                        btn.classList.add('bg-surface-light', 'text-text-secondary');
+                    });
+
+                    this.classList.remove('bg-surface-light', 'text-text-secondary');
+                    this.classList.add('bg-primary', 'text-white', 'glow-primary');
+
+                    // Filter skills
+                    skillCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (category === 'all' || cardCategory === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        // Skill demo modal functionality
+        function openSkillDemo(skillType) {
+            const modal = document.getElementById('skill-modal');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('modal-content');
+
+            // Set modal content based on skill type
+            const skillTitles = {
+                'unity': 'Unity Development Demo',
+                'csharp': 'C# Programming Examples',
+                '3dmodeling': '3D Modeling Workflow',
+                'animation': 'Animation Techniques',
+                'blender': 'Blender Workflow Demo',
+                'management': 'Project Management Case Studies'
+            };
+
+            title.textContent = skillTitles[skillType] || 'Skill Demonstration';
+
+            // Load appropriate demo content
+            loadSkillDemoContent(skillType, content);
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSkillModal() {
+            const modal = document.getElementById('skill-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        function loadSkillDemoContent(skillType, container) {
+            // Simulate loading different demo content
+            const demoContent = {
+                'unity': `
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-surface-light rounded-lg p-6">
+                            <h3 class="font-orbitron font-bold text-xl text-text-primary mb-4">Interactive Unity Scene</h3>
+                            <div class="bg-background rounded-lg h-64 flex items-center justify-center mb-4">
+                                <div class="text-center">
+                                    <svg class="w-16 h-16 text-primary mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                    </svg>
+                                    <p class="text-text-secondary">WebGL Demo Loading...</p>
+                                </div>
+                            </div>
+                            <button class="w-full bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-lg font-medium transition-smooth">
+                                Launch Interactive Demo
+                            </button>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="font-orbitron font-bold text-xl text-text-primary">Code Examples</h3>
+                            <div class="bg-background rounded-lg p-4 font-fira-code text-sm">
+                                <div class="text-accent">// Player Controller Script</div>
+                                <div class="text-text-primary">public class PlayerController : MonoBehaviour</div>
+                                <div class="text-text-primary">{</div>
+                                <div class="text-text-primary ml-4">public float speed = 5f;</div>
+                                <div class="text-text-primary ml-4">private Rigidbody rb;</div>
+                                <div class="text-text-primary">}</div>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                'csharp': `
+                    <div class="space-y-6">
+                        <h3 class="font-orbitron font-bold text-xl text-text-primary">C# Code Samples</h3>
+                        <div class="bg-background rounded-lg p-4 font-fira-code text-sm">
+                            <div class="text-accent">// Singleton Pattern Implementation</div>
+                            <div class="text-text-primary">public class GameManager : MonoBehaviour</div>
+                            <div class="text-text-primary">{</div>
+                            <div class="text-text-primary ml-4">private static GameManager instance;</div>
+                            <div class="text-text-primary ml-4">public static GameManager Instance => instance;</div>
+                            <div class="text-text-primary">}</div>
+                        </div>
+                    </div>
+                `
+            };
+
+            container.innerHTML = demoContent[skillType] || '<p class="text-center text-text-secondary">Demo content loading...</p>';
+        }
+
+        // Close modal on outside click
+        document.getElementById('skill-modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeSkillModal();
+            }
+        });
+
+        // Animate skill progress bars on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBar = entry.target.querySelector('.bg-gradient-to-r');
+                    if (progressBar) {
+                        progressBar.style.width = '0%';
+                        setTimeout(() => {
+                            progressBar.style.transition = 'width 1s ease-out';
+                            progressBar.style.width = progressBar.getAttribute('data-width') || progressBar.style.width;
+                        }, 100);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill cards
+        document.querySelectorAll('#skills-grid > div').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>
